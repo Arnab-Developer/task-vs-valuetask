@@ -21,7 +21,7 @@ Intel Xeon Platinum 8272CL CPU 2.60GHz, 1 CPU, 2 logical and 2 physical cores
 | ReadWithValueTask | 1.191 s | 0.0248 s | 0.0654 s | 1.219 s |    205 KB |
 ```
 
-Benchmark comparison result of the code which is 99% of the times synchronous.
+Benchmark comparison result of the code which is 99% of the times synchronous and 1% of time asynchronous.
 
 ```
 // * Summary *
