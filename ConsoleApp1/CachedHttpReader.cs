@@ -55,8 +55,8 @@ internal class CachedHttpReader
     private const string _targetUrl = "https://google.com";
 
     private static HttpResponseMessage? s_ResponseTask;
-    private static HttpResponseMessage? s_ResponseValueTask;    
-        
+    private static HttpResponseMessage? s_ResponseValueTask;
+
     public async Task<HttpContent> ReadWithTask()
     {
         if (s_ResponseTask == null)
