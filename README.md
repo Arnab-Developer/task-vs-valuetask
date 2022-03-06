@@ -4,6 +4,8 @@ Comparison between `Task` and `ValueTask` in C#.
 
 If your code's execution path is synchronous in most of the cases and sometimes asynchronous then you can use `ValueTask` to reduce some memory allocation. But if your code's execution path is always asynchronous then `Task` should be used. Because in that case we will not get any performance benefit by using `ValueTask` over `Task`.
 
+## Benchmark comparison result
+
 Benchmark comparison result of the code which is always asynchronous.
 
 ```
@@ -37,3 +39,8 @@ Intel Xeon Platinum 8272CL CPU 2.60GHz, 1 CPU, 2 logical and 2 physical cores
 |      ReadWithTask | 4.123 s | 0.0511 s | 0.0478 s | 513000.0000 |      9 GB |
 | ReadWithValueTask | 3.738 s | 0.0167 s | 0.0157 s | 128000.0000 |      2 GB |
 ```
+
+## References
+
+- https://www.youtube.com/watch?v=IN4dRdKlISI
+- https://www.youtube.com/watch?v=mEhkelf0K6g
