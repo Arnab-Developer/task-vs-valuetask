@@ -2,9 +2,9 @@
 
 Comparison between `Task` and `ValueTask` in C#.
 
-If your code's hot path is synchronous in most of the cases then you can use `ValueTask` to reduce some memory allocation. But if your code's hot path is always asynchronous then `Task` should be used. Because in that case we will not get any performance benefit by using `ValueTask` over `Task`.
+If your code's execution path is synchronous in most of the cases and sometimes asynchronous then you can use `ValueTask` to reduce some memory allocation. But if your code's execution path is always asynchronous then `Task` should be used. Because in that case we will not get any performance benefit by using `ValueTask` over `Task`.
 
-Benchmark comparison  result of the code which is always asynchronous.
+Benchmark comparison result of the code which is always asynchronous.
 
 ```
 // * Summary *
