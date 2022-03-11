@@ -42,5 +42,6 @@ Intel Xeon Platinum 8272CL CPU 2.60GHz, 1 CPU, 2 logical and 2 physical cores
 
 ## References
 
+- https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.valuetask
 - https://www.youtube.com/watch?v=IN4dRdKlISI
 - https://www.youtube.com/watch?v=mEhkelf0K6g
